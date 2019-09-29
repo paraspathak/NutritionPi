@@ -81,6 +81,7 @@ def get_nutrition(name_of_item):
         try:
             data_to_send[item] = first[item]
         except:
+            data_to_send[item] = '0'
             print("exception", item, ' Not found')
     return data_to_send
 
@@ -94,7 +95,7 @@ def click_picture(current_path):
     return current_path + name
 
 
-if __name__ == "__main__":
+#if __name__ == "__main__":
     # # analyze_data(image_analysis("D:/trial.jpg"))
     # data = {"categories": [{"name": "food_", "score": 0.81640625}], "color": {"accentColor": "B34918", "dominantColorBackground": "Black", "dominantColorForeground": "Black", "dominantColors": ["Black"], "isBWImg": False, "isBwImg": False}, "description": {"captions": [{"confidence": 0.9134966061427492, "text": "a bowl of food"}], "tags": [
     #     "food", "bowl", "dish", "table", "filled", "pasta", "sitting", "pan", "plate", "full", "meat", "large", "broccoli", "fruit", "soup", "rice", "cooking", "sandwich", "stove"]}, "metadata": {"format": "Jpeg", "height": 250, "width": 200}, "requestId": "86e469f9-6e00-4292-bd3a-203336cee577"}
@@ -103,4 +104,4 @@ if __name__ == "__main__":
     # caption = description['caption']
     # print(tags)
     #print(get_nutrition(analyze_data(image_analysis("D:/th.jpg"))))
-    print(get_nutrition("water"))
+    #print(get_nutrition("water"))

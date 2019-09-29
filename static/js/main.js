@@ -9,6 +9,9 @@ $(document).ready(function () {
             console.log(msg);
             // data = JSON.parse(msg);
             $('#add_here').append(genereate_nutrition(msg));
+            tag = `<img src="static/img/`+msg['image']+`" alt={{ employee.name }} width="512" height="360" />`
+            console.log(tag);
+            $('#add_image').append(tag);
         }
     });
     
