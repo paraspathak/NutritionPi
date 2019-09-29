@@ -310,13 +310,17 @@ width: 100%;
     font-size: 15px;
 }
 
-.price-content 
+ .price-content 
 {
     display: inline;
     float: left;
     width: 100%;
     padding: 0 15px;
 
+}
+
+.align_me{
+    text-align: right;
 }
 
 .price-content ul li

@@ -33,7 +33,7 @@ def image_analysis(image_path):
 
 def analyze_data(data):
     # Mega tags to store all sample food items in database
-    database = ['banana', 'apple', 'donut', 'pasta', 'noodles', 'coffee']
+    database = ['banana', 'apple', 'donut', 'pasta', 'noodles', 'coffee', 'water']
     description = data['description']
     tags = description['tags']
     output = []
@@ -102,4 +102,5 @@ if __name__ == "__main__":
     # tags = description['tags']
     # caption = description['caption']
     # print(tags)
-    print(get_nutrition(analyze_data(image_analysis("D:/trial.jpg"))))
+    #print(get_nutrition(analyze_data(image_analysis("D:/th.jpg"))))
+    print(get_nutrition("water"))
